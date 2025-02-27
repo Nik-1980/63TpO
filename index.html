@@ -1,186 +1,230 @@
-
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>63 Окремий Батальйон Територіальної Оборони</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>63 Батальйон ТрО</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <header>
-        <h1><img src="images/Без імені.png" alt="Логотип"></h1>
+      <div class="container">
+        <h1>63 Батальйон ТрО</h1>
         <nav>
-            <ul>
-                <li><a href="#pronas" class="cta-button">ПРО НАС</a></li>
-                <li><a href="#why-join" class="cta-button">ЧОМУ САМЕ МИ?</a></li>
-                <li><a href="#vacancies" class="cta-button">ВАКАНСІЇ</a></li>
-                <li><a href="#faq" class="cta-button">ПИТАННЯ ТА ВІДПОВІДІ</a></li>
-                <li><a href="#contacts" class="cta-button">КОНТАКТИ</a></li>
+          <div class="logo">
+            <img src="/images/logo.png" alt="Логотип" />
+          </div>
+
+          <!-- Бургер-кнопка -->
+          <div class="burger-menu" onclick="toggleMenu()">☰</div>
+
+          <div class="nav-container">
+            <ul class="nav-links" id="navLinks">
+              <li><a href="#about">Про нас</a></li>
+              <li><a href="#why-us">Чому саме ми</a></li>
+              <li><a href="#gallery">Галерея</a></li>
+              <li><a href="#vacancies">Вакансії</a></li>
+              <li><a href="#contact">Контакти</a></li>
             </ul>
+          </div>
         </nav>
-
+      </div>
     </header>
-<div class="section bg1">
-	<section id="hero">
-        <div class="hero-content">
-            <h2>Вступи до 63 окремого батальйону </h2>
-			<h2>територіальної оборони!</h2>
-            <h4>Захищай рідну землю та майбутнє країни разом з нами.</h4>
-			<p>ㅤ<p>
-            <a href="#form" class="c-button">ПРИЄДНАТИСЬ</a>
-        </div>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>Про нас</h2>
+        <p>
+          Ми військова частина А7075 (63-й окремий батальйон територіальної
+          оборони 103-ї ОБрТр0 ім. митрополита Андрея Шептицького) Дислокуємся у
+          Шептицькому районі Львівської області 3 квітня 2022 року ми надійно
+          тримаємо оборону на сході України, відстоявши кожен сантиметр нашої
+          землі. Наш батальйон активно долучався до Слобожанського контрнаступу
+          та боях у Курській області. 4 вересня 2022 року 63-й батальйон спільно
+          з нацгвардійцями 15-го полку НГУ звільнив село Озерне Лиманської
+          громади від російських окупантів Ми - команда патріотів, готових
+          віддати всі сили заради перемоги України.
+        </p>
+      </div>
     </section>
-</div>
-<div class="section bg2">
-	<section id="pronas">
-        <div class="content">
-</div>
-	</div>
-<html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Соцмережі</title>
-    <style>
-        .social-list {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            gap: 5px; /* Відступи між іконками */
-        }
-        .social-item {
-			text-align: right;
-			padding-left: 40px;
-            display: flex;
+    <section id="why-us" class="section">
+      <div class="container">
+        <h2>Чому саме ми?</h2>
+        <div class="features">
+          <div class="feature">
+            <img src="/images/icon-experience.png" alt="Досвід" />
+            <h3>Досвідчені бійці</h3>
+            <p>
+              Наш батальйон складається з професіоналів, які пройшли бойові
+              завдання і мають високу підготовку.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="/images/icon-equipment.png" alt="Екіпіровка" />
+            <h3>Сучасна екіпіровка</h3>
+            <p>
+              Ми забезпечені найкращою технікою та озброєнням, що дозволяє
+              ефективно виконувати бойові завдання.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="images/icon-support.png" alt="Підтримка" />
+            <h3>Сильна підтримка</h3>
+            <p>
+              Ми отримуємо підтримку від громадян та волонтерів, що дає нам
+              додаткову мотивацію і ресурси.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            align-items: center;
-            gap: 10px;
-        }
-        .social-link {
-            display: inline-block;
-            text-decoration: none;
-        }
-        .social-image {
-            width: 45px; /* Розмір іконок */
-            height: auto;
-            padding-bottom: 20px;
-            border-radius: 0px; /* Закруглення кутів */
-            transition: transform 0.3s ease-in-out;
-        }
-        .social-image:hover {
-            transform: scale(1.1); /* Збільшення при наведенні */
-        }
-    </style>
-</head>
-<body>
+    <section id="vacancies" class="section">
+      <div class="container">
+        <h2>Вакансії</h2>
+        <p>Приєднуйся до нашого батальйону! Ми шукаємо мотивованих бійців.</p>
 
-<ul class="social-list">
-    <li class="social-item">Наш Facebook:
-        <a href="https://www.facebook.com/63obtro?rdid=2rxnDRnOFWVprVWV&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1E7mGNJw8y%2F#" target="_blank" class="social-link">
-            <img src="Imege/facebook.png" 
-                 alt="Facebook" class="social-image">
+        <div class="vacancy-list">
+          <div class="vacancy">
+            <h3>Стрілець</h3>
+            <p>
+              <strong>Вимоги:</strong> гарна фізична підготовка, вміння
+              працювати зі стрілецькою зброєю.
+            </p>
+            <p>
+              <strong>Обов’язки:</strong> виконання бойових завдань, охорона
+              позицій.
+            </p>
+            <button class="apply-btn" onclick="openModal()">
+              Подати заявку
+            </button>
+          </div>
+
+          <div class="vacancy">
+            <h3>Медик</h3>
+            <p>
+              <strong>Вимоги:</strong> медична освіта або досвід роботи медиком
+              у бойових умовах.
+            </p>
+            <p>
+              <strong>Обов’язки:</strong> надання першої допомоги, евакуація
+              поранених.
+            </p>
+            <button class="apply-btn" onclick="openModal()">
+              Подати заявку
+            </button>
+          </div>
+
+          <div class="vacancy">
+            <h3>Механік-водій</h3>
+            <p>
+              <strong>Вимоги:</strong> досвід водіння бронетехніки або
+              вантажного транспорту.
+            </p>
+            <p>
+              <strong>Обов’язки:</strong> керування технікою, обслуговування
+              машин.
+            </p>
+            <button class="apply-btn" onclick="openModal()">
+              Подати заявку
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Модальне вікно -->
+    <div id="applicationModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Подати заявку</h2>
+        <form id="applicationForm">
+          <label for="name">Ім'я та прізвище:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Електронна пошта:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Телефон:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="message">Повідомлення:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="send-btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+
+    <section id="faces" class="section">
+      <div class="container">
+        <h2>Обличчя 63 батальйону</h2>
+        <div class="gallery">
+          <img src="/images/1.jpeg" alt="Боєць 1" />
+          <img src="/images/5.jpeg" alt="Боєць 2" />
+          <img src="/images/shustriy.jpg" alt="Боєць 3" />
+          <img src="/images/bandura.jpg" alt="Боєць 4" />
+          <img src="/images/DSC_0011.JPG" alt="Боєць 5" />
+          <img src="/images/kotyk.jpg" alt="Боєць 6" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Контакти</h2>
+      <p>Зв’яжіться з нами для додаткової інформації.</p>
+
+      <!-- Контактні дані -->
+      <div class="contact-info">
+        <p>
+          <strong>Телефон:</strong
+          ><a href="tel:+380669946343">+38 (066) 994-63-43</a>
+        </p>
+        <p>
+          <strong>Email:</strong
+          ><a href="mailto:post_A7075@post.mil.gov.ua"
+            >post_A7075@post.mil.gov.ua</a
+          >
+        </p>
+        <p>
+          <strong>Адреса:</strong> вул. Стуса, 23, м. Шептицький, Львівська
+          область
+        </p>
+      </div>
+
+      <!-- Соціальні мережі -->
+      <div class="social-links">
+        <a href="https://www.facebook.com/63obtro" target="_blank">
+          <img src="images/facebook.png" alt="Facebook" />
         </a>
-    </li>
-
-    <li class="social-item">Наш Instagram:
-        <a href="https://www.instagram.com/yourpage" target="_blank" class="social-link">
-            <img src="Imege/Instagram.png" 
-                 alt="Instagram" class="social-image">
+        <a href="https://instagram.com/yourpage" target="_blank">
+          <img src="images/instagram.png" alt="Instagram" />
         </a>
-    </li>
-
-    <li class="social-item">Наш TikTok:
-        <a href="https://www.tiktok.com/@yourpage" target="_blank" class="social-link">
-            <img src="Imege/tiktok.png" 
-                 alt="TikTok" class="social-image">
+        <a href="https://tiktok.com/@yourpage" target="_blank">
+          <img src="images/tiktok.png" alt="TikTok" />
         </a>
-    </li>
-</ul>
+      </div>
 
-</body>
-</html>
-</div>
-<div class="section bg3">
-    <section id="why-join">
-        <div class="content">
-            <h3>Чому вступити до 63 ОбТРО - це крок у майбутнє</h3>
-            <ul>
-                <li><strong>Професійний розвиток</strong> Ми надаємо унікальну можливість пройти шлях від рядового до офіцера, здобути сучасні військові навички та знання.</li>
-                <li><strong>Сильна команда</strong> Станьте частиною згуртованого колективу де панують взаємоповага підтримка та братерство.</li>
-                <li><strong>Соціальні гарантії </strong>  Гарантуємо стабільну заробітну плату, медичне страхування та соціальні пільги для вас і вашої родини.</li>
-                <li><strong> Важливість служби  </strong>Ваша служба – це вагомий внесок у світле майбутнє України.</li>
-           
-		   </ul>
-		   <h3>Що ми пропонуємо?</h3>
-		   <ul>
-				<li><strong>Різноманітні посади</strong> Ми допоможемо знайти посаду, що відповідатиме вашим навичкам, досвіду та амбіціям. Якщо ж, є бажання навчитись щось новому, залюбки відправимо на навчання де ви здобудете нові кваліфіковані знання та навички.</li>
-                <li><strong>Сучасне обладнання</strong> Використовуємо найновіше військове обладнання та зброю, аби забезпечити максимальну ефективність у захисті Батьківщини. Ми максимально дбаємо про своїх військовослужбовців, про їх життя та  здоров’я. В нас багато засобів РЕБ які ми постійно намагаємся поповнювати, що є однією з запорук  по збереженню та захисту життя наших людей.</li>
-                <li><strong>Регулярні тренування</strong>  Підтримуємо високий рівень бойової готовності через систематичні тренування та навчання.</li>
-           </ul>
-        </div>
-    </section>
-</div>
-    <section id="vacancies">
-        <div class="content">
-            <h3>Актуальні вакансії</h3>
-            <div class="vacancy-list">
-                <div class="vacancy-item">
-                    <img src="https://via.placeholder.com/150" alt="Стрілець">
-                    <h4>Стрілець</h4>
-                    <p>Виконання обов'язків на передовій, захист території.</p>
-                </div>
-                <div class="vacancy-item">
-                    <img src="https://ab3.army/wp-content/themes/main-template/assets/images/get-order.webp" alt="Кулеметник">
-                    <h4>Кулеметник</h4>
-                    <p>Забезпечення підтримки вогнем під час боїв.</p>
-                </div>
-                <div class="vacancy-item">
-                    <img src="https://ab3.army/wp-content/uploads/2024/05/tankist-finish.png" alt="Бойовий медик">
-                    <h4>Бойовий медик</h4>
-                    <p>Надання медичної допомоги пораненим у зоні бойових дій.</p>
-                </div>
-                <div class="vacancy-item">
-                    <img src="https://via.placeholder.com/150" alt="Оператор БПЛА">
-                    <h4>Оператор БПЛА</h4>
-                    <p>Управління безпілотними літальними апаратами для розвідки та спостереження.</p>
-                </div>
-            </div>
-        </div>
+      <!-- Google карта -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2335.854571583435!2d24.242206815470883!3d50.39822561188158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suk!2spl!4v1740658130700!5m2!1suk!2spl"
+          width="100%"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
     </section>
 
-    <section id="faq">
-        <div class="content">
-            <h3>Актуальні запитання</h3>
-            <div class="faq-item">
-                <h4>Чи можна перевестися з іншого підрозділу?</h4>
-                <p>Так, ви можете перевестися з іншого підрозділу, якщо відповідаєте вимогам та пройшли співбесіду.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Яка заробітна плата мене чекає?</h4>
-                <p>Заробітна плата залежить від вашої посади та досвіду, але ми гарантуємо конкурентоспроможні умови.</p>
-            </div>
-            <div class="faq-item">
-                <h4>Які вимоги до мене для вступу?</h4>
-                <p>Вимоги: відсутність кримінального минулого, здоров'я, готовність до служби та бажання захищати Батьківщину.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="contacts">
-        <div class="content">
-            <h3>Контакти</h3>
-            <p><strong>Адреса:</strong> м. Шептицький, вул. Стуса 23</p>
-            <p><strong>Контакт-центр:</strong> +38 (000) 000 00 00</p>
-        </div>
-    </section>
-
-
-<footer>
-        <div class="content">
-            <p>&copy; 2025 63 Окремий Батальйон Територіальної Оборони. Всі права захищені.</p>
-        </div>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 63 Батальйон ТрО. Всі права захищені.</p>
+      </div>
     </footer>
 
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
